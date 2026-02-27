@@ -1,0 +1,146 @@
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    overflow: hidden;
+    background: #000;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at center, transparent 0%, rgba(13, 13, 13, 0.5) 100%),
+        linear-gradient(to bottom,
+            rgba(13, 13, 13, 0.4) 0%,
+            transparent 50%,
+            var(--bg) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.hero-card {
+    padding: 2rem;
+}
+
+.hero-subtitle {
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 10vw, 6rem);
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-line {
+    display: block;
+}
+
+.text-serif {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.text-italic {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.low-opacity {
+    opacity: 0.7;
+}
+
+.hero-description {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: #e0e0e0;
+    margin-bottom: 4rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+@media (min-width: 640px) {
+    .hero-buttons {
+        flex-direction: row;
+    }
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.scroll-text {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: white;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    position: relative;
+}
+
+.scroll-dot {
+    width: 3px;
+    height: 3px;
+    background: var(--primary);
+    position: absolute;
+    top: 0;
+    left: -1px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary);
+}

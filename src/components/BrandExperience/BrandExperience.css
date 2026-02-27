@@ -1,0 +1,129 @@
+.brand-experience {
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 600px;
+    border-radius: 4px !important;
+}
+
+@media (min-width: 992px) {
+    .experience-wrapper {
+        grid-template-columns: 1.2fr 1fr;
+    }
+}
+
+.experience-bg {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    .experience-bg {
+        height: 100%;
+    }
+}
+
+.experience-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.experience-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(13, 13, 13, 0.4), transparent);
+}
+
+.experience-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .experience-content {
+        padding: 5rem;
+    }
+}
+
+.experience-desc {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 480px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+.stat-icon-box {
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.stat-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .experience-content {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
