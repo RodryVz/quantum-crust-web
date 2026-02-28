@@ -1,6 +1,5 @@
 import React from 'react';
 import { Instagram, Twitter, Facebook, Landmark } from 'lucide-react';
-import { getWhatsAppLink, WA_MESSAGES } from '../../utils/whatsapp';
 import './Footer.css';
 
 const Footer: React.FC = () => {
