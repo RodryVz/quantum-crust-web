@@ -25,9 +25,9 @@ const Header: React.FC = () => {
   return (
     <header className={`main-header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
-        <div className="logo-section" role="img" aria-label="Quantum Crust Logo">
+        <div className="logo-section" role="img" aria-label="Aura Pizza Logo">
           <Landmark className="logo-icon" size={24} aria-hidden="true" />
-          <span className="logo-text">Quantum Crust</span>
+          <span className="logo-text">Aura Pizza</span>
         </div>
 
         {/* Desktop Nav */}

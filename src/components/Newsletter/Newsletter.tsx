@@ -42,7 +42,7 @@ const Newsletter: React.FC = () => {
                 >
                   <div className="community-badge">
                     <Crown size={14} />
-                    <span>Círculo Quantum</span>
+                    <span>Círculo Aura</span>
                   </div>
                   
                   <h3 className="form-title">Comunidad Exclusiva</h3>

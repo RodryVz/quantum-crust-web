@@ -11,9 +11,9 @@ const Footer: React.FC = () => {
       <div className="container footer-content">
         <div className="footer-top">
           <div className="footer-brand">
-            <div className="logo-section" role="img" aria-label="Quantum Crust Logo">
+            <div className="logo-section" role="img" aria-label="Aura Pizza Logo">
               <Landmark className="logo-icon" size={24} aria-hidden="true" />
-              <span className="logo-text">Quantum Crust</span>
+              <span className="logo-text">Aura Pizza</span>
             </div>
             <p className="brand-mantra">Tradición en cada gesto, fuego en cada masa.</p>
           </div>
@@ -32,10 +32,8 @@ const Footer: React.FC = () => {
             <div className="footer-column">
               <h5 className="column-title">Contacto</h5>
               <p className="column-text">
-                <a href={getWhatsAppLink(WA_MESSAGES.INFO)} target="_blank" rel="noopener noreferrer" className="footer-wa-link">
-                  +56 9 8765 4321
-                </a> 
-                <br />ciao@quantumcrust.com
+                 
+                <br />ciao@aura.pizza
               </p>
             </div>
           </div>
@@ -43,7 +41,7 @@ const Footer: React.FC = () => {
         
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © {currentYear} Quantum Crust — Excelencia Neapolitana Artesanal
+            © {currentYear} Aura Pizza — Excelencia Neapolitana Artesanal
           </p>
           
           <div className="social-links">
